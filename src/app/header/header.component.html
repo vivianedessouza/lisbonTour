@@ -1,64 +1,89 @@
-<body>
-<header class="top-area">
-  <div class="header-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-2">
-          <div class="logo">
-            <a href="index.html"> tour<span>Nest</span> </a>
-          </div>
-          <!-- /.logo-->
-        </div>
-        <!-- /.col-->
-        <div class="col-sm-10">
-          <div class="main-menu">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button
-                type="button"
-                class="navbar-toggle"
-                data-toggle="collapse"
-                data-target=".navbar-collapse"
-              >
-                <i class="fa fa-bars"></i></button
-              ><!-- / button-->
-            </div>
-            <!-- /.navbar-header-->
-            <div class="collapse navbar-collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="smooth-menu"><a routerLink="/Home">home</a></li>
-                <li class="smooth-menu"><a routerLink="/About">about</a></li>
-                <li class="smooth-menu"><a routerLink="/Travel">travel</a></li>
-                <li class="smooth-menu">
-                  <a routerLink="/Destination">Destination</a>
-                </li>
-                <li class="smooth-menu">
-                  <a routerLink="/Packages">Packages </a>
-                </li>
-                <li class="smooth-menu">
-                  <a routerLink="/SpecialOffers">Special Offers</a>
-                </li>
-                <li class="smooth-menu"><a routerLink="/Blog">blog</a></li>
-                <li class="smooth-menu">
-                  <a routerLink="/Subscription">subscription</a>
-                </li>
-
-                <!--/.project-btn-->
-              </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-          </div>
-          <!-- /.main-menu-->
-        </div>
-        <!-- /.col-->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="logo">
+        <a href="index.html"> tour<span>Nest</span> </a>
       </div>
-      <!-- /.row -->
-      <div class="home-border"></div>
-      <!-- /.home-border-->
+      <!-- /.logo-->
     </div>
-    <!-- /.container-->
+    <!-- /.col-->
+    <div class="col-sm-10">
+      <div class="main-menu">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <i class="fa fa-bars"></i></button
+          ><!-- / button-->
+        </div>
+        <!-- /.navbar-header-->
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="smooth-menu">
+              <a
+                routerLink="/Home"
+                (click)="getActiveTab('home')"
+                [class.active]="activetab === 'home'"
+                >home</a
+              >
+            </li>
+            <li class="smooth-menu">
+              <a
+                routerLink="/Destination"
+                (click)="getActiveTab('destination')"
+                [class.active]="activetab === 'destination'"
+                >Destination</a
+              >
+            </li>
+            <li class="smooth-menu">
+              <a
+                routerLink="/Packages"
+                (click)="getActiveTab('packages')"
+                [class.active]="activetab === 'packages'"
+                >Packages
+              </a>
+            </li>
+            <li class="smooth-menu">
+              <a
+                routerLink="/Blog"
+                (click)="getActiveTab('blog')"
+                [class.active]="activetab === 'blog'"
+                >blog</a
+              >
+            </li>
+            <li class="smooth-menu">
+              <a
+                routerLink="/SpecialOffers"
+                (click)="getActiveTab('specialOffers')"
+                [class.active]="activetab === 'specialOffers'"
+                >Special Offers</a
+              >
+            </li>
+
+            <li class="smooth-menu">
+              <a
+                routerLink="/Subscription"
+                (click)="getActiveTab('subscription')"
+                [class.active]="activetab === 'subscription'"
+                >subscription</a
+              >
+            </li>
+
+            <!--/.project-btn-->
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.main-menu-->
+    </div>
+    <!-- /.col-->
   </div>
-  <!-- /.header-area -->
-</header>
-
-
+  <!-- /.row -->
+  <div class="home-border"></div>
+  <!-- /.home-border-->
+</div>
+<!-- /.container-->

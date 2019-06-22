@@ -2,10 +2,10 @@
   <div class="container">
     <div class="subscribe-title text-center">
       <h2>
-        Join our Subscribers List to Get Regular Update
+       {{ subscribe.title }}
       </h2>
       <p>
-        Subscribe Now. We will send you Best offer for your Trip
+        {{ subscribe.text }}
       </p>
     </div>
     <form>
@@ -17,7 +17,7 @@
               class="form-control"
               placeholder="Enter your Email Here"
             />
-            <button class="appsLand-btn subscribe-btn">Subscribe</button>
+            <button class="appsLand-btn subscribe-btn">{{ subscribe.btn }}</button>
             <div class="clearfix"></div>
             <i class="fa fa-envelope"></i>
           </div>

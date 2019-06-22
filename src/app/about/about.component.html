@@ -6,24 +6,495 @@
           <div class="single-about-us">
             <div class="about-us-txt">
               <h2>
-                Explore the Beauty of the Beautiful World 
-
+                {{ about.heading }}
               </h2>
               <div class="about-btn">
-                <button  class="about-view">
-                  explore now
+                <button class="about-view">
+                  {{ about.headingText }}
                 </button>
-              </div><!--/.about-btn-->
-            </div><!--/.about-us-txt-->
-          </div><!--/.single-about-us-->
-        </div><!--/.col-->
+              </div>
+              <!--/.about-btn-->
+            </div>
+            <!--/.about-us-txt-->
+          </div>
+          <!--/.single-about-us-->
+        </div>
+        <!--/.col-->
         <div class="col-sm-0">
-          <div class="single-about-us">
-            
-          </div><!--/.single-about-us-->
-        </div><!--/.col-->
-      </div><!--/.row-->
-    </div><!--/.about-us-content-->
-  </div><!--/.container-->
+          <div class="single-about-us"></div>
+          <!--/.single-about-us-->
+        </div>
+        <!--/.col-->
+      </div>
+      <!--/.row-->
+    </div>
+    <!--/.about-us-content-->
+  </div>
+  <!--/.container-->
+</section>
+<!--/.about-us-->
 
-</section><!--/.about-us-->
+<!--travel-box start-->
+<section class="travel-box">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="single-travel-boxes">
+          <div id="desc-tabs" class="desc-tabs">
+            <ul class="nav nav-tabs" role="tablist">
+              <li
+                role="presentation"
+                class="active"
+                *ngFor="let feature of about.features"
+              >
+                <a
+                  href="#tours"
+                  aria-controls="tours"
+                  role="tab"
+                  data-toggle="tab"
+                >
+                  <i class="fa fa-{{ feature.icon }}"></i>
+                  {{ feature.label }}
+                </a>
+              </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active fade in" id="tours">
+                <div class="tab-para">
+                  <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                      <div class="single-tab-select-box">
+                        <h2>{{ about.destination }}</h2>
+
+                        <div class="travel-select-icon">
+                          <select class="form-control ">
+                            <option value="default">{{
+                              about.textareaCountry
+                            }}</option
+                            ><!-- /.option-->
+
+                            <option value="turkey">turkey</option
+                            ><!-- /.option-->
+
+                            <option value="russia">russia</option
+                            ><!-- /.option-->
+                            <option value="egept">egypt</option
+                            ><!-- /.option--> </select
+                          ><!-- /.select-->
+                        </div>
+                        <!-- /.travel-select-icon -->
+
+                        <div class="travel-select-icon">
+                          <select class="form-control ">
+                            <option value="default">{{
+                              about.textareaLocation
+                            }}</option
+                            ><!-- /.option-->
+
+                            <option value="istambul">istambul</option
+                            ><!-- /.option-->
+
+                            <option value="mosko">mosko</option
+                            ><!-- /.option-->
+                            <option value="cairo">cairo</option
+                            ><!-- /.option--> </select
+                          ><!-- /.select-->
+                        </div>
+                        <!-- /.travel-select-icon -->
+                      </div>
+                      <!--/.single-tab-select-box-->
+                    </div>
+                    <!--/.col-->
+
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                      <div class="single-tab-select-box">
+                        <h2>{{ about.checkIn }}</h2>
+                        <div class="travel-check-icon">
+                          <form action="#">
+                            <input
+                              type="text"
+                              name="check_in"
+                              class="form-control"
+                              data-toggle="datepicker"
+                              placeholder="12 -01 - 2017 "
+                            />
+                          </form>
+                        </div>
+                        <!-- /.travel-check-icon -->
+                      </div>
+                      <!--/.single-tab-select-box-->
+                    </div>
+                    <!--/.col-->
+
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                      <div class="single-tab-select-box">
+                        <h2>{{ about.checkOut }}</h2>
+                        <div class="travel-check-icon">
+                          <form action="#">
+                            <input
+                              type="text"
+                              name="check_out"
+                              class="form-control"
+                              data-toggle="datepicker"
+                              placeholder="22 -01 - 2017 "
+                            />
+                          </form>
+                        </div>
+                        <!-- /.travel-check-icon -->
+                      </div>
+                      <!--/.single-tab-select-box-->
+                    </div>
+                    <!--/.col-->
+
+                    <div class="col-lg-2 col-md-1 col-sm-4">
+                      <div class="single-tab-select-box">
+                        <h2>{{ about.duration }}</h2>
+                        <div class="travel-select-icon">
+                          <select class="form-control ">
+                            <option value="default">5</option
+                            ><!-- /.option-->
+
+                            <option value="10">10</option
+                            ><!-- /.option-->
+
+                            <option value="15">15</option
+                            ><!-- /.option-->
+                            <option value="20">20</option
+                            ><!-- /.option--> </select
+                          ><!-- /.select-->
+                        </div>
+                        <!-- /.travel-select-icon -->
+                      </div>
+                      <!--/.single-tab-select-box-->
+                    </div>
+                    <!--/.col-->
+
+                    <div class="col-lg-2 col-md-1 col-sm-4">
+                      <div class="single-tab-select-box">
+                        <h2>{{ about.members }}</h2>
+                        <div class="travel-select-icon">
+                          <select class="form-control ">
+                            <option value="default">1</option
+                            ><!-- /.option-->
+
+                            <option value="2">2</option
+                            ><!-- /.option-->
+
+                            <option value="4">4</option
+                            ><!-- /.option-->
+                            <option value="8">8</option
+                            ><!-- /.option--> </select
+                          ><!-- /.select-->
+                        </div>
+                        <!-- /.travel-select-icon -->
+                      </div>
+                      <!--/.single-tab-select-box-->
+                    </div>
+                    <!--/.col-->
+                  </div>
+                  <!--/.row-->
+
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <div class="travel-budget">
+                        <div class="row">
+                          <div class="col-md-3 col-sm-4">
+                            <h3>{{ about.budget }}</h3>
+                          </div>
+                          <!--/.col-->
+                          <div class="co-md-9 col-sm-8">
+                            <div class="travel-filter">
+                              <div class="info_widget">
+                                <div class="price_filter">
+                                  <div id="slider-range"></div>
+                                  <!--/.slider-range-->
+
+                                  <div class="price_slider_amount">
+                                    <input
+                                      type="text"
+                                      id="amount"
+                                      name="price"
+                                      placeholder="Add Your Price"
+                                    />
+                                  </div>
+                                  <!--/.price_slider_amount-->
+                                </div>
+                                <!--/.price-filter-->
+                              </div>
+                              <!--/.info_widget-->
+                            </div>
+                            <!--/.travel-filter-->
+                          </div>
+                          <!--/.col-->
+                        </div>
+                        <!--/.row-->
+                      </div>
+                      <!--/.travel-budget-->
+                    </div>
+                    <!--/.col-->
+                    <div class="clo-sm-7">
+                      <div class="about-btn travel-mrt-0 pull-right">
+                        <button class="about-view travel-btn">
+                          {{ about.search }}</button
+                        ><!--/.travel-btn-->
+                      </div>
+                      <!--/.about-btn-->
+                    </div>
+                    <!--/.col-->
+                  </div>
+                  <!--/.row-->
+                </div>
+                <!--/.tab-para-->
+              </div>
+              <!--/.tabpannel-->
+              <div role="tabpanel" class="tab-pane fade in" id="flights">
+                <div class="tab-para">
+                  <div class="trip-circle">
+                    <div class="single-trip-circle">
+                      <input type="radio" id="radio01" name="radio" />
+                      <label for="radio01">
+                        <span class="round-boarder">
+                          <span class="round-boarder1"></span> </span
+                        >{{ about.aroundTrip }}
+                      </label>
+                    </div>
+                    <!--/.single-trip-circle-->
+                    <div class="single-trip-circle">
+                      <input type="radio" id="radio02" name="radio" />
+                      <label for="radio02">
+                        <span class="round-boarder">
+                          <span class="round-boarder1"></span> </span
+                        >{{ about.onWay }}
+                      </label>
+                    </div>
+                    <!--/.single-trip-circle-->
+                  </div>
+                  <!--/.trip-circle-->
+                  <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                      <div class="single-tab-select-box">
+                        <h2>{{ about.from }}</h2>
+
+                        <div class="travel-select-icon">
+                          <select class="form-control ">
+                            <option value="default">{{
+                              about.textareaLocation
+                            }}</option
+                            ><!-- /.option-->
+
+                            <option value="turkey">turkey</option
+                            ><!-- /.option-->
+
+                            <option value="russia">russia</option
+                            ><!-- /.option-->
+                            <option value="egept">egypt</option
+                            ><!-- /.option--> </select
+                          ><!-- /.select-->
+                        </div>
+                        <!-- /.travel-select-icon -->
+                      </div>
+                      <!--/.single-tab-select-box-->
+                    </div>
+                    <!--/.col-->
+
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                      <div class="single-tab-select-box">
+                        <h2>{{ about.departure }}</h2>
+                        <div class="travel-check-icon">
+                          <form action="#">
+                            <input
+                              type="text"
+                              name="departure"
+                              class="form-control"
+                              data-toggle="datepicker"
+                              placeholder="12 -01 - 2017 "
+                            />
+                          </form>
+                        </div>
+                        <!-- /.travel-check-icon -->
+                      </div>
+                      <!--/.single-tab-select-box-->
+                    </div>
+                    <!--/.col-->
+
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                      <div class="single-tab-select-box">
+                        <h2>{{ about.return }}</h2>
+                        <div class="travel-check-icon">
+                          <form action="#">
+                            <input
+                              type="text"
+                              name="return"
+                              class="form-control"
+                              data-toggle="datepicker"
+                              placeholder="22 -01 - 2017 "
+                            />
+                          </form>
+                        </div>
+                        <!-- /.travel-check-icon -->
+                      </div>
+                      <!--/.single-tab-select-box-->
+                    </div>
+                    <!--/.col-->
+
+                    <div class="col-lg-2 col-md-1 col-sm-4">
+                      <div class="single-tab-select-box">
+                        <h2>{{ abot.adults }}</h2>
+                        <div class="travel-select-icon">
+                          <select class="form-control ">
+                            <option value="default">5</option
+                            ><!-- /.option-->
+
+                            <option value="10">10</option
+                            ><!-- /.option-->
+
+                            <option value="15">15</option
+                            ><!-- /.option-->
+                            <option value="20">20</option
+                            ><!-- /.option--> </select
+                          ><!-- /.select-->
+                        </div>
+                        <!-- /.travel-select-icon -->
+                      </div>
+                      <!--/.single-tab-select-box-->
+                    </div>
+                    <!--/.col-->
+
+                    <div class="col-lg-2 col-md-1 col-sm-4">
+                      <div class="single-tab-select-box">
+                        <h2>{{ about.childs }}</h2>
+                        <div class="travel-select-icon">
+                          <select class="form-control ">
+                            <option value="default">1</option
+                            ><!-- /.option-->
+
+                            <option value="2">2</option
+                            ><!-- /.option-->
+
+                            <option value="4">4</option
+                            ><!-- /.option-->
+                            <option value="8">8</option
+                            ><!-- /.option--> </select
+                          ><!-- /.select-->
+                        </div>
+                        <!-- /.travel-select-icon -->
+                      </div>
+                      <!--/.single-tab-select-box-->
+                    </div>
+                    <!--/.col-->
+                  </div>
+                  <!--/.row-->
+
+                  <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                      <div class="single-tab-select-box">
+                        <h2>{{ about.to }}</h2>
+
+                        <div class="travel-select-icon">
+                          <select class="form-control ">
+                            <option value="default">{{
+                              about.textareaLocation
+                            }}</option
+                            ><!-- /.option-->
+
+                            <option value="istambul">istambul</option
+                            ><!-- /.option-->
+
+                            <option value="mosko">mosko</option
+                            ><!-- /.option-->
+                            <option value="cairo">cairo</option
+                            ><!-- /.option--> </select
+                          ><!-- /.select-->
+                        </div>
+                        <!-- /.travel-select-icon -->
+                      </div>
+                      <!--/.single-tab-select-box-->
+                    </div>
+                    <!--/.col-->
+                    <div class="col-lg-3 col-md-3 col-sm-4">
+                      <div class="single-tab-select-box">
+                        <h2>{{ about.class }}</h2>
+                        <div class="travel-select-icon">
+                          <select class="form-control ">
+                            <option value="default">{{
+                              about.enterClass
+                            }}</option
+                            ><!-- /.option-->
+
+                            <option value="A">A</option
+                            ><!-- /.option-->
+
+                            <option value="B">B</option
+                            ><!-- /.option-->
+                            <option value="C">C</option
+                            ><!-- /.option--> </select
+                          ><!-- /.select-->
+                        </div>
+                        <!-- /.travel-select-icon -->
+                      </div>
+                      <!--/.single-tab-select-box-->
+                    </div>
+                    <!--/.col-->
+                    <div class="clo-sm-5">
+                      <div class="about-btn pull-right">
+                        <button class="about-view travel-btn">
+                          {{ about.search }}</button
+                        ><!--/.travel-btn-->
+                      </div>
+                      <!--/.about-btn-->
+                    </div>
+                    <!--/.col-->
+                  </div>
+                  <!--/.row-->
+                </div>
+              </div>
+              <!--/.tabpannel-->
+            </div>
+            <!--/.tab content-->
+          </div>
+          <!--/.desc-tabs-->
+        </div>
+        <!--/.single-travel-box-->
+      </div>
+      <!--/.col-->
+    </div>
+    <!--/.row-->
+  </div>
+  <!--/.container-->
+</section>
+<!--/.travel-box-->
+<!--travel-box end-->
+
+<!--service start-->
+<section id="service" class="service">
+  <div class="container">
+    <div class="service-counter text-center">
+      <div class="col-md-4 col-sm-4">
+        <div class="single-service-box" *ngFor="let service of about.services">
+          <div class="service-img">
+            <img src="assets/images/service/{{service.image}}" alt="service-icon" />
+          </div>
+          <!--/.service-img-->
+          <div class="service-content">
+            <h2>
+              <a href="#">
+                {{service.title}}
+              </a>
+            </h2>
+            <p>
+              {{service.text}}
+            </p>
+          </div>
+          <!--/.service-content-->
+        </div>
+        <!--/.single-service-box-->
+      </div>
+    </div>
+    <!--/.statistics-counter-->
+  </div>
+  <!--/.container-->
+</section>
+<!--/.service-->
+<!--service end-->

@@ -137,6 +137,11 @@ body {
 .header-area {
   position: relative;
   width: 100%;
+  background: rgba(77, 78, 84, 1);
+  height: 100%;
+  top: 0;
+  left: 0;
+ 
 }
 
 /*.sticky-wrapper */
