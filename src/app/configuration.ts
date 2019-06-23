@@ -56,38 +56,44 @@ export const configuration = {
   blog: {
     title: " latest news",
     subTitle: "Travel News from all over the world",
-    articles: [
-      {
-        image: "b1.jpg",
-        heading: "trending news ",
-        date: "15 november 2017",
-        subHading:
-          " Discover on beautiful weather, Fantastic foods and historical place in Prag",
-        text:
-          " Lorem ipsum dolor sit amet, contur adip elit, sed do modincid ut labore et dolore magna aliqua. Ut enim ad minimveniam",
-        readMore: "Read More"
-      },
-      {
-        image: "b2.jpg",
-        heading: "trending news2 ",
-        date: "15 november 2018",
-        subHading:
-          " Discover on beautiful weather, Fantastic foods and historical place in Prag",
-        text:
-          " Lorem ipsum dolor sit amet, contur adip elit, sed do modincid ut labore et dolore magna aliqua. Ut enim ad minimveniam",
-        readMore: "Read More"
-      },
-      {
-        image: "b3.jpg",
-        heading: "trending news3 ",
-        date: "15 november 2019",
-        subHading:
-          " Discover on beautiful weather, Fantastic foods and historical place in Prag",
-        text:
-          " Lorem ipsum dolor sit amet, contur adip elit, sed do modincid ut labore et dolore magna aliqua. Ut enim ad minimveniam",
-        readMore: "Read More"
-      }
-    ]
+    posts:[
+        {
+            image: "b1.jpg",
+            heading: "trending news3 ",
+            date: "2019-01-01T23:28:56.782Z",
+            subHading:
+              " Discover on beautiful weather, Fantastic foods and historical place in Prag",
+            text:
+              " Lorem ipsum dolor sit amet, contur adip elit, sed do modincid ut labore et dolore magna aliqua. Ut enim ad minimveniam",
+            readMore: "Read More",
+            id:1,
+            author: "vivi",
+        },
+        {
+            image: "b2.jpg",
+            heading: "trending news3 ",
+            date: "2019-01-01T23:28:56.782Z",
+            subHading:
+              " Discover on beautiful weather, Fantastic foods and historical place in Prag",
+            text:
+              " Lorem ipsum dolor sit amet, contur adip elit, sed do modincid ut labore et dolore magna aliqua. Ut enim ad minimveniam",
+            readMore: "Read More",
+            id:2,
+            author: "vivi",
+        },
+        {
+            image: "b3.jpg",
+            heading: "trending news3 ",
+            date: "2019-01-01T23:28:56.782Z",
+            subHading:
+              " Discover on beautiful weather, Fantastic foods and historical place in Prag",
+            text:
+              " Lorem ipsum dolor sit amet, contur adip elit, sed do modincid ut labore et dolore magna aliqua. Ut enim ad minimveniam",
+            readMore: "Read More",
+            id:3,
+            author: "vivi",
+        }
+    ],
   },
 
   subscribe: {

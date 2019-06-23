@@ -16,6 +16,8 @@ import { OfferComponent } from "./offer/offer.component";
 import { BlogComponent } from "./blog/blog.component";
 import { SubscribeComponent } from "./subscribe/subscribe.component";
 import { FooterComponent } from "./footer/footer.component";
+import { PostComponent } from './post/post.component';
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { FooterComponent } from "./footer/footer.component";
     OfferComponent,
     BlogComponent,
     SubscribeComponent,
-    FooterComponent
+    FooterComponent,
+    PostComponent,
+    ArticleComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [ConfigService],

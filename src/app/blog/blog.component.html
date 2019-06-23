@@ -9,51 +9,11 @@
           {{ blog.subTitle }}
         </p>
       </div>
-      <!--/.gallery-header-->
-      <div class="blog-content" *ngFor="let article of blog.articles">
-        <div class="row">
-          <div class="col-sm-4 col-md-4">
-            <div class="thumbnail">
-              <h2>
-                {{ article.heading }}<span>{{ article.date }}</span>
-              </h2>
-              <div class="thumbnail-img">
-                <img
-                  src="assets/images/blog/{{ article.image }}"
-                  alt="blog-img"
-                />
-                <div class="thumbnail-img-overlay"></div>
-                <!--/.thumbnail-img-overlay-->
-              </div>
-              <!--/.thumbnail-img-->
-
-              <div class="caption">
-                <div class="blog-txt">
-                  <h3>
-                    <a href="#">
-                      {{ article.subHading }}
-                    </a>
-                  </h3>
-                  <p>
-                    {{ article.text }}
-                  </p>
-                  <a href="#"> {{ article.readMore }}</a>
-                </div>
-                <!--/.blog-txt-->
-              </div>
-              <!--/.caption-->
-            </div>
-            <!--/.thumbnail-->
-          </div>
-          <!--/.col-->
-
-          <!--/.col-->
-        </div>
-        <!--/.row-->
+      <div class="blog-content" *ngFor="let post of blog.posts">
+        <app-post [post]="posts"></app-post>
       </div>
-      <!--/.blog-content-->
+      <!--/.blog-details-->
     </div>
-    <!--/.blog-details-->
   </div>
   <!--/.container-->
 </section>

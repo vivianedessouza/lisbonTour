@@ -8,4 +8,8 @@ export class ConfigService {
   getConfig() {
     return configuration;
   }
+
+  getPostByID(id:number) {
+    return this.getConfig.blog.posts[id - 1];
+  }
 }
