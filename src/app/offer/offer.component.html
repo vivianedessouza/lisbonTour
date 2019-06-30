@@ -41,14 +41,10 @@
               </div>
               <!--/.packages-para-->
               <div class="offer-btn-group">
-                <div class="about-btn">
-                  <button class="about-view packages-btn offfer-btn">
-                   {{offer.tour}}
-                  </button>
-                </div>
+                
                 <!--/.about-btn-->
                 <div class="about-btn">
-                  <button class="about-view packages-btn">
+                  <button class="about-view packages-btn" (click)="btnClick()">
                     {{offer.book}}
                   </button>
                 </div>
@@ -70,11 +66,7 @@
               />
             </div>
             <!--/.single-special-offer-bg-->
-            <div class="single-special-shape-txt">
-              <h3>{{offer.offer}}</h3>
-              <h4><span>{{offer.valor}}</span><br />{{offer.off}}</h4>
-              <p><span>{{offer.price}}</span><br />{{offer.reguler}}</p>
-            </div>
+            
             <!--/.single-special-shape-txt-->
           </div>
           <!--/.single-special-offer-->

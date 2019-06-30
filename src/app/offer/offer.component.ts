@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ConfigService } from "../config.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-offer",
@@ -8,7 +9,7 @@ import { ConfigService } from "../config.service";
 })
 export class OfferComponent implements OnInit {
   offer = {};
-  constructor(private config: ConfigService) {}
+  constructor(private config: ConfigService, private router: Router) {}
 
   ngOnInit() {
     this.offer = this.getOffer();
@@ -17,4 +18,8 @@ export class OfferComponent implements OnInit {
   getOffer() {
     return this.config.getConfig().offer;
   }
+
+  btnClick = () => {
+    this.router.navigate(["/Home"]);
+  };
 }

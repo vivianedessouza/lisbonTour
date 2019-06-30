@@ -9,11 +9,11 @@
           {{ blog.subTitle }}
         </p>
       </div>
-      <div class="blog-content" *ngFor="let post of blog.posts">
+      <div class="blog-content" *ngFor="let post of pages">
         <app-post [post]="posts"></app-post>
       </div>
       <!--/.blog-details-->
     </div>
   </div>
-  <!--/.container-->
+  <app-pagination [pager]="pager" (setPage)="setPage($event)"></app-pagination>
 </section>

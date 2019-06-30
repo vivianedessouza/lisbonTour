@@ -1,27 +1,14 @@
 export const configuration = {
   about: {
-    heading: "Explore the Beauty of the Beautiful World ",
-    headingText: "Explore now",
-    destination: "Destination",
-    departure: "departure",
-    textareaLocation: "enter your destination location",
-    textareaCountry: "enter your destination country",
-    checkIn: "check in",
-    checkOut: "check out",
-    duration: "durantion",
+    heading: "Explore the Beauty of the Beautiful Portugal",
+    headingText: "explore now",
+    destination: "attractions",
+    textareaCountry: "choose your tourist attraction",
+    checkIn: "data",
+    checkOut: "time",
+    duration: "duration",
     members: "members",
-    return: "return",
-    budget: "budget:",
-    search: "search",
-    adults: "adults",
-    childs: "childs",
-    roundTrip: "round trip",
-    onWay: "on way",
-    from: "from",
-    to: "to",
-    class: "class",
-    enterClass: "enter class",
-    amazing: "amazing tour packages",
+    search: "Reservation",
     description:
       "Duis aute irure dolor in  velit esse cillum dolore eu fugiat nulla.",
     book: "book top class hotel",
@@ -56,44 +43,44 @@ export const configuration = {
   blog: {
     title: " latest news",
     subTitle: "Travel News from all over the world",
-    posts:[
-        {
-            image: "b1.jpg",
-            heading: "trending news3 ",
-            date: "2019-01-01T23:28:56.782Z",
-            subHading:
-              " Discover on beautiful weather, Fantastic foods and historical place in Prag",
-            text:
-              " Lorem ipsum dolor sit amet, contur adip elit, sed do modincid ut labore et dolore magna aliqua. Ut enim ad minimveniam",
-            readMore: "Read More",
-            id:1,
-            author: "vivi",
-        },
-        {
-            image: "b2.jpg",
-            heading: "trending news3 ",
-            date: "2019-01-01T23:28:56.782Z",
-            subHading:
-              " Discover on beautiful weather, Fantastic foods and historical place in Prag",
-            text:
-              " Lorem ipsum dolor sit amet, contur adip elit, sed do modincid ut labore et dolore magna aliqua. Ut enim ad minimveniam",
-            readMore: "Read More",
-            id:2,
-            author: "vivi",
-        },
-        {
-            image: "b3.jpg",
-            heading: "trending news3 ",
-            date: "2019-01-01T23:28:56.782Z",
-            subHading:
-              " Discover on beautiful weather, Fantastic foods and historical place in Prag",
-            text:
-              " Lorem ipsum dolor sit amet, contur adip elit, sed do modincid ut labore et dolore magna aliqua. Ut enim ad minimveniam",
-            readMore: "Read More",
-            id:3,
-            author: "vivi",
-        }
-    ],
+    posts: [
+      {
+        image: "b1.jpg",
+        heading: "trending news3 ",
+        date: "2019-01-01T23:28:56.782Z",
+        subHading:
+          " Discover on beautiful weather, Fantastic foods and historical place in Prag",
+        text:
+          " Lorem ipsum dolor sit amet, contur adip elit, sed do modincid ut labore et dolore magna aliqua. Ut enim ad minimveniam",
+        readMore: "Read More",
+        id: 1,
+        author: "vivi"
+      },
+      {
+        image: "b2.jpg",
+        heading: "trending news3 ",
+        date: "2019-01-01T23:28:56.782Z",
+        subHading:
+          " Discover on beautiful weather, Fantastic foods and historical place in Prag",
+        text:
+          " Lorem ipsum dolor sit amet, contur adip elit, sed do modincid ut labore et dolore magna aliqua. Ut enim ad minimveniam",
+        readMore: "Read More",
+        id: 2,
+        author: "vivi"
+      },
+      {
+        image: "b3.jpg",
+        heading: "trending news3 ",
+        date: "2019-01-01T23:28:56.782Z",
+        subHading:
+          " Discover on beautiful weather, Fantastic foods and historical place in Prag",
+        text:
+          " Lorem ipsum dolor sit amet, contur adip elit, sed do modincid ut labore et dolore magna aliqua. Ut enim ad minimveniam",
+        readMore: "Read More",
+        id: 3,
+        author: "vivi"
+      }
+    ]
   },
 
   subscribe: {
@@ -107,7 +94,7 @@ export const configuration = {
     text: "Duis aute irure dolor in velit esse cillum dolore eu fugiat nulla.",
     packages: [
       {
-        country: "italy",
+        country: "almada",
         image: "p1.jpg",
         price: "$499",
         date: "5 daays 6 nights",
@@ -118,7 +105,7 @@ export const configuration = {
         book: "book now"
       },
       {
-        country: "italy",
+        country: "belém",
         image: "p2.jpg",
         price: "$499",
         date: "5 daays 6 nights",
@@ -129,7 +116,7 @@ export const configuration = {
         book: "book now"
       },
       {
-        country: "italy",
+        country: "praça do comércio",
         image: "p3.jpg",
         price: "$499",
         date: "5 daays 6 nights",
@@ -140,7 +127,7 @@ export const configuration = {
         book: "book now"
       },
       {
-        country: "italy",
+        country: "alfama",
         image: "p4.jpg",
         price: "$499",
         date: "5 daays 6 nights",
@@ -151,7 +138,7 @@ export const configuration = {
         book: "book now"
       },
       {
-        country: "italy",
+        country: "Mosteiro dos jerónimos",
         image: "p5.jpg",
         price: "$499",
         date: "5 daays 6 nights",
@@ -162,7 +149,7 @@ export const configuration = {
         book: "book now"
       },
       {
-        country: "italy",
+        country: "Ponte 25 de abril",
         image: "p6.jpg",
         price: "$499",
         date: "5 daays 6 nights",
@@ -176,7 +163,7 @@ export const configuration = {
   },
 
   offer: {
-    country: "Brasil",
+    country: "Lisbon",
     review: "2544 review",
     date: "5 daays 6 nights",
     person: "2 person",
@@ -201,37 +188,37 @@ export const configuration = {
     pics: [
       {
         image: "g1.jpg",
-        country: "Brasil",
+        country: "Alfama",
         tours: "20 tours",
         place: "15 places"
       },
       {
         image: "g2.jpg",
-        country: "Brasil",
+        country: "Almada",
         tours: "20 tours",
         place: "15 places"
       },
       {
         image: "g3.jpg",
-        country: "Brasil",
+        country: "Ericeira",
         tours: "20 tours",
         place: "15 places"
       },
       {
         image: "g4.jpg",
-        country: "Brasil",
+        country: "Belém",
         tours: "20 tours",
         place: "15 places"
       },
       {
         image: "g5.jpg",
-        country: "Brasil",
+        country: "Santa Apolónia",
         tours: "20 tours",
         place: "15 places"
       },
       {
         image: "g6.jpg",
-        country: "Brasil",
+        country: "Sintra",
         tours: "20 tours",
         place: "15 places"
       }

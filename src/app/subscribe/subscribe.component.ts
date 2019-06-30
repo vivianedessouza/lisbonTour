@@ -8,6 +8,7 @@ import { ConfigService } from "../config.service";
 })
 export class SubscribeComponent implements OnInit {
   subscribe = {};
+  email: string;
   constructor(private config: ConfigService) {}
 
   ngOnInit() {
@@ -16,5 +17,32 @@ export class SubscribeComponent implements OnInit {
 
   getSubscribe() {
     return this.config.getConfig().subscribe;
+  }
+  subscribeBtn() {
+    if (!this.email) {
+      alert("This field is required!");
+      return;
+    }
+
+    if (this.isInputValidEmail()) {
+      alert("Your subscription done successfully!");
+    } else {
+      alert("The Email is not correct!");
+    }
+  }
+
+  isInputValidEmail() {
+    let result = false;
+
+    if (this.validateEmail(this.email)) {
+      result = true;
+    }
+
+    return result;
+  }
+
+  validateEmail(email) {
+    const re = /\S+@\S+\.\S+/;
+    return re.test(email);
   }
 }

@@ -2,7 +2,7 @@
   <div class="container">
     <div class="subscribe-title text-center">
       <h2>
-       {{ subscribe.title }}
+        {{ subscribe.title }}
       </h2>
       <p>
         {{ subscribe.text }}
@@ -16,8 +16,11 @@
               type="email"
               class="form-control"
               placeholder="Enter your Email Here"
+              (input)="email = $event.target.value"
             />
-            <button class="appsLand-btn subscribe-btn">{{ subscribe.btn }}</button>
+            <button class="appsLand-btn subscribe-btn" (click)="subscribeBtn()">
+              {{ subscribe.btn }}
+            </button>
             <div class="clearfix"></div>
             <i class="fa fa-envelope"></i>
           </div>

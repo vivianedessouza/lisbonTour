@@ -2,14 +2,14 @@ import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { Routes, RouterModule } from "@angular/router";
 
-import { AboutComponent } from './about/about.component';
-import { GalleryComponent } from './gallery/gallery.component';
-import { PackagesComponent } from './packages/packages.component';
-import { OfferComponent } from './offer/offer.component';
-import { BlogComponent } from './blog/blog.component';
-import { ArticleComponent } from './article/article.component';
-import { SubscribeComponent } from './subscribe/subscribe.component';
-
+import { AboutComponent } from "./about/about.component";
+import { GalleryComponent } from "./gallery/gallery.component";
+import { PackagesComponent } from "./packages/packages.component";
+import { OfferComponent } from "./offer/offer.component";
+import { BlogComponent } from "./blog/blog.component";
+import { ArticleComponent } from "./article/article.component";
+import { SubscribeComponent } from "./subscribe/subscribe.component";
+import { NotfoundComponent } from "./notfound/notfound.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "/Home", pathMatch: "full" },
@@ -20,9 +20,9 @@ const routes: Routes = [
   { path: "Blog", component: BlogComponent },
   { path: "Article/:id", component: ArticleComponent },
   { path: "Subscription", component: SubscribeComponent },
-  
+  { path: "404", component: NotfoundComponent },
+  { path: "**", redirectTo: "404" }
 ];
-
 
 @NgModule({
   imports: [CommonModule, RouterModule.forRoot(routes)],

@@ -18,6 +18,9 @@ import { SubscribeComponent } from "./subscribe/subscribe.component";
 import { FooterComponent } from "./footer/footer.component";
 import { PostComponent } from './post/post.component';
 import { ArticleComponent } from './article/article.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { PaginationComponent } from './pagination/pagination.component';
+import { PagerService } from './pager.service';
 
 @NgModule({
   declarations: [
@@ -35,10 +38,12 @@ import { ArticleComponent } from './article/article.component';
     SubscribeComponent,
     FooterComponent,
     PostComponent,
-    ArticleComponent
+    ArticleComponent,
+    NotfoundComponent,
+    PaginationComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [ConfigService],
+  providers: [ConfigService, PagerService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
